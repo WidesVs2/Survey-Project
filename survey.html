@@ -1,0 +1,139 @@
+<<!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Short Anime Survey</title>
+        <link rel="stylesheet" type="text/css" href="surveystyle.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="Blogstylesheet.css" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Mansalva|Turret+Road:400,700&display=swap&subset=latin-ext"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Slab:400,700&display=swap&subset=latin-ext"
+            rel="stylesheet">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </head>
+
+    <div id="info-bar">
+        <Banner class="banner">
+            <img src="resources/images/digital-global-technology-banner-with-circuit-diagram_1017-17946.jpg"
+                alt="Digital Banner" id="img-dig-banner">
+            <h1 id="web-name">Ogden's Web Developer Paradise</h1>
+        </Banner>
+        <nav id="nav-bar">
+            <a href="index.html" class="nav-link">
+                <h3 id="home">Home</h3>
+            </a>
+            <a href="About.html" class="nav-link">
+                <h3 id="about">About</h3>
+            </a>
+            <a href="Contact.html" class="nav-link">
+                <h3 id="contact">Contact</h3>
+            </a>
+            <a href="Portfolio.html" class="nav-link">
+                <h3 id="portfolio">Portfolio</h3>
+            </a>
+            <a href="Forum.html" class="nav-link">
+                <h3 id="forums">Forums</h3>
+            </a>
+            <a href="Register.html" class="nav-link">
+                <h3 id="register">Register</h3>
+            </a>
+            <a href="Donate.html" class="nav-link">
+                <h3 id="donate">Donate</h3>
+            </a>
+        </nav>
+    </div>
+
+    <main id="main" class="body">
+        <img id="head-img" src="resources/images/Cutewaveanime.png" alt="Waving anime girl">
+        <header id="head">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Short survey about your Anime preferences.</p>
+        </header>
+        <form id="survey-form">
+            <div id="left-content">
+
+                <a href="https://9anime.to/" target="_blank"><img id="img-left2"
+                        src="resources/images/Anime-watching-tv-gif.gif" alt="anime girl watching tv"></a>
+                <p class="left-captions">Watch Anime for free, ad blocker reccomended.</p>
+                
+                
+                <a href="https://www.reddit.com/r/Animemes/" target="_blank"><img id="img-left3"
+                        src="resources/images/animeme.png" alt="anime girl meme no upvotes"></a>
+                <p class="left-captions">Good Anime memes on Reddit!</p>
+
+
+            </div>
+            <div id="right-content">
+
+
+
+
+            </div>
+            <label id="name-label">Name</label><input placeholder="User ID" id="name" type="text" required>
+            <label id="email-label">Email</label><input placeholder="personal email" id="email" type="email" required>
+            <h3>What is your Gender?</h3>
+            <div id="cont-gender">
+                <label>Male</label><input type="radio" name="gender" value="male">
+                <label>Female</label><input type="radio" name="gender" value="female">
+                <label>Other</label><input type="radio" name="gender" value="other"></div>
+            <h3>Anime Viewing Habbits</h3>
+            <label id="number-label">Number seen</label><input placeholder="Max 100" id="number" type="number" min="0"
+                max="100">
+            <label id="hours-label">Hours in a week devoted to watching Anime.</label><input placeholder="Max 40"
+                id="hours" type="number" min="0" max="40">
+            <label>Favorite Genre of Anime?(choose only one)</label><select id="dropdown" name="genres">
+
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Slice of Life">Slice of Life</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Magic">Magic</option>
+                <option value="Supernatural">Supernatural</option>
+                <option value="Horror">Horror</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Psychological">Psychological</option>
+                <option value="Romance">Romance</option>
+                <option value="Sci-Fi">Sci Fi</option>
+            </select><br>
+            <h3>Other genres you watch?</h3>
+            <div id="cont-boxes">
+                <input name="genre1" value="action" type="checkbox">Action<br>
+                <input name="genre2" value="adventure" type="checkbox">Adventure<br>
+                <input name="genre3" value="comedy" type="checkbox">Comedy<br>
+                <input name="genre4" value="drama" type="checkbox">Drama<br>
+                <input name="genre5" value="sliceolife" type="checkbox">Slice of Life<br>
+                <input name="genre6" value="fantasy" type="checkbox">Fantasy<br>
+                <input name="genre7" value="magic" type="checkbox">Magic<br>
+                <input name="genre8" value="supernatural" type="checkbox">Supernatural<br>
+                <input name="genre9" value="horror" type="checkbox">Horror<br>
+                <input name="genre10" value="mystery" type="checkbox">Mystery<br>
+                <input name="genre11" value="psychological" type="checkbox">Psychological<br>
+                <input name="genre12" value="romance" type="checkbox">Romance<br>
+                <input name="genre13" value="scifi" type="checkbox">Sci-Fi<br>
+            </div>
+            <h3>Do you pay for a streaming service to watch anime?</h3>
+            <div id="cont-quest1">
+                <label>Yes</label><input type="radio" name="question1" value="Yes">
+                <label>No</label><input type="radio" name="question1" value="No">
+            </div>
+            <h3>Are you happy with your current method of watching anime?</h3>
+            <div id="cont-quest2">
+                <label>Yes</label><input type="radio" name="question2" value="yes">
+                <label>No</label><input type="radio" name="question2" value="no">
+            </div>
+            <h3>Which anime shaped you or inspired you the most? How did this affect you?</h3>
+            <textarea name="message" rows="5" cols="45" max-length="500" placeholder="Max 500 characters">
+</textarea>
+            <input id="submit" type="submit">
+
+
+        </form>
+        <footer>
+            <h4>Thanks for taking the time to fill this out!</h4>
+        </footer>
+    </main>
+
+    </html>
